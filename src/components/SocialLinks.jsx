@@ -13,7 +13,7 @@ const SocialLinks = () => {
                 LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://www.linkedin.com/in/diegotellezc/',
+            href: 'https://www.linkedin.com/in/mcrojas/',
             style: 'rounded-tr-md'
         },
         {
@@ -23,7 +23,7 @@ const SocialLinks = () => {
                 GitHub <FaGithub size={30} />
                 </>
             ),
-            href: 'https://github.com/diegotellezc'
+            href: 'https://github.com/mrojas17'
         },
         {
             id: 3,
@@ -32,16 +32,16 @@ const SocialLinks = () => {
                 Mail <HiOutlineMail size={30} />
                 </>
             ),
-            href: 'mailto:diegotellezdev@gmail.com'
+            href: 'mailto:mcrojasr17@gmail.com'
         },
         {
             id: 4,
             child: (
                 <>
-                Resume <BsFillPersonLinesFill size={30} />
+                Hoja de vida <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/FullStack_Developer_DiegoTellez.pdf',
+            href: '/FullStack_MonicaRojas.pdf',
             style: 'rounded-br-md',
             download: true
         }
@@ -53,7 +53,7 @@ const SocialLinks = () => {
                 {
                     links.map(({id, child, href, style, download}) => (
                         <li key={id} className={"flex justify-between items-center w-40 h-14 px-4 bg-primary-color/90 ml-[-100px] duration-500 hover:rounded-md hover:ml-[-10px]" + " " + style }>
-                        <a href={href} className="flex justify-between items-center w-full text-black font-semibold ml-4" download={download} target="_blank" rel="noreferrer">
+                        <a href={href} className="flex items-center justify-between w-full ml-4 font-semibold text-black" download={download} target="_blank" rel="noreferrer">
                         {child}
                         </a>
                         </li>

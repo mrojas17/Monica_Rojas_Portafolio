@@ -11,10 +11,10 @@ export default {
       },
 
       colors: {
-        "primary-color": "#0DFC4B",
-        "light-green": "rgba(142, 255, 139, 0.5)",
-        "dark-green": "#8EFF8B",
-        "light-gray": "#AEAEAE",
+        "primary-color": "#B57EDC",
+        "light-lilac": "rgba(200, 160, 255, 0.5)",
+        "dark-lilac": "#C8A0FF",
+        "light-gray": "#E6CCFF",
       },
     },
   },

@@ -1,15 +1,15 @@
-import React from "react";
+
 import html from "../../../assets/html.png";
 import css from "../../../assets/css.png";
 import javascript from "../../../assets/javascript.png";
+import typeScript from "../../../assets/typeScript.png";
 import react from "../../../assets/react.png";
-import vue from "../../../assets/vue.png";
 import git from "../../../assets/git.png";
 import github from "../../../assets/github.png";
 import node from "../../../assets/node.png";
 import nextjs from "../../../assets/nextjs.png";
+// import reactNative from "../../../assets/reactNative.png";
 import postgres from "../../../assets/postgres.png";
-import redux from "../../../assets/redux.png";
 import tailwind from "../../../assets/tailwind.png";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -25,7 +25,7 @@ const Techs = () => {
       id: 2,
       src: css,
       title: "CSS",
-      style: "shadow-blue-500",
+      style: "shadow-blue-400",
     },
     {
       id: 3,
@@ -35,58 +35,58 @@ const Techs = () => {
     },
     {
       id: 4,
+      src: typeScript,
+      title: "TypeScript",
+      style: "shadow-blue-700",
+    },
+    {
+      id: 5,
       src: react,
       title: "React",
       style: "shadow-cyan-400",
     },
+    // {
+    //   id: 6,
+    //   src: reactNative,
+    //   title: "React Native",
+    //   style: "shadow-blue-400",
+    // },
     {
-      id: 5,
-      src: vue,
-      title: "Vue",
-      style: "shadow-emerald-500",
-    },
-    {
-      id: 6,
+      id: 7,
       src: tailwind,
       title: "Tailwind CSS",
       style: "shadow-cyan-700",
     },
     {
-      id: 7,
+      id: 8,
       src: node,
       title: "Node JS",
       style: "shadow-lime-400",
     },
     {
-      id: 8,
+      id: 9,
       src: nextjs,
       title: "Next JS",
       style: "shadow-white",
     },
     {
-      id: 9,
+      id: 10,
       src: git,
       title: "Git",
       style: "shadow-orange-600",
     },
     {
-      id: 10,
+      id: 11,
       src: github,
       title: "GitHub",
       style: "shadow-white",
     },
     {
-      id: 11,
+      id: 12,
       src: postgres,
       title: "PostgreSQL",
-      style: "shadow-blue-400",
-    },
-    {
-      id: 12,
-      src: redux,
-      title: "Redux",
-      style: "shadow-violet-700",
-    },
+      style: "shadow-blue-300",
+    }
   ];
 
   return (
@@ -94,21 +94,21 @@ const Techs = () => {
       name="Technologies"
       className="relative w-full md:h-screen h-unset"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto text-white">
         <div>
-          <h2 className="text-4xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-5xl">
-            Technologies
+          <h2 className="inline pb-1 text-4xl font-bold border-b-4 border-primary-color/40 sm:text-5xl">
+          Tecnologías
           </h2>
-          <p className="py-6">These are the technologies I've worked with</p>
+          <p className="py-6">Estas son las tecnologías con las que he trabajado</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-8 text-center py-8 sm:px-0">
+        <div className="grid w-full grid-cols-2 gap-8 py-8 text-center sm:grid-cols-4 lg:grid-cols-6 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`flex flex-col justify-between shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img className="w-20 mx-auto py-2 md:py-4" src={src} alt="" />
+              <img className="w-20 py-2 mx-auto md:py-4" src={src} alt="" />
               <p className="mt-4 md:mt-2">{title}</p>
             </div>
           ))}
@@ -119,9 +119,9 @@ const Techs = () => {
         to="Education"
         smooth
         duration={500}
-        className="absolute bottom-2 -left-full md:left-1/2 md:-translate-x-1/2 cursor-pointer hover:text-primary-color"
+        className="absolute cursor-pointer bottom-2 -left-full md:left-1/2 md:-translate-x-1/2 hover:text-primary-color"
       >
-        <i className="bx bx-chevron-down text-7xl text-gray-400 animate-bounce font hover:text-primary-color"></i>
+        <i className="text-gray-400 bx bx-chevron-down text-7xl animate-bounce font hover:text-primary-color"></i>
       </ScrollLink>
     </section>
   );

@@ -15,6 +15,25 @@
     box-shadow: 0 0 1rem 0 #86ff4b87;
 }
 
+.relative::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .relative::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .relative::-webkit-scrollbar-thumb {
+    background-color: rgba(42, 41, 41, 0.8);
+    border-radius: 4px;
+  }
+  
+  .relative {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(30, 30, 30, 0.8) transparent; 
+  }
+  
+
     @media (max-height: 620px) {
         .h-unset {
             height: unset !important; 

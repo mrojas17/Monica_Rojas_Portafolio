@@ -1,4 +1,5 @@
-import React from "react";
+
+import PropTypes from "prop-types";
 
 const ProjectCard = ({ project, handleModalInfo }) => {
   const handleClickDemo = (demoUrl) => {
@@ -14,29 +15,39 @@ const ProjectCard = ({ project, handleModalInfo }) => {
   };
 
   return (
-    <div className="shadow-md shadow-gray-600 rounded-lg max-w-md mx-auto">
+    <div className="max-w-md mx-auto rounded-lg shadow-md shadow-gray-600">
       <img
         onClick={() => handleModalInfo(project)}
         src={project.src}
         alt="project card"
-        className="rounded-md duration-200 hover:scale-105 cursor-pointer"
+        className="duration-200 rounded-md cursor-pointer h-36 hover:scale-105"
       />
       <div className="flex items-center justify-center">
         <button
           onClick={() => handleClickDemo(project.demo)}
-          className="w-1/2 px-6 py-2 m-4 duration-200 hover:scale-125"
+          className="w-1/2 px-6 m-1 duration-200 hover:scale-125"
         >
           Demo
         </button>
         <button
           onClick={() => handleClickCode(project.code)}
-          className="w-1/2 px-6 py-2 m-4 duration-200 hover:scale-125"
+          className="w-1/2 px-6 m-1 duration-200 hover:scale-125"
         >
           Code
         </button>
       </div>
     </div>
   );
+}
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    demo: PropTypes.string.isRequired,
+    code: PropTypes.string.isRequired,
+  }).isRequired,
+  handleModalInfo: PropTypes.func.isRequired,
 };
+
 
 export default ProjectCard;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -14,7 +15,7 @@ const CertificateSlider = ({ certificates }) => {
         speed: 500,
         slidesToScroll: 1,
         draggable: true,
-        rows: 2,
+        // rows: 2,
         responsive: [{
             breakpoint: 3000,
             settings: {
@@ -52,12 +53,12 @@ const CertificateSlider = ({ certificates }) => {
     
 
     return (
-        <section name='Education' className='relative w-full h-unset md:h-screen text-white'>
-            <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+        <section name='Education' className='relative w-full text-white h-unset md:h-screen'>
+            <div className='flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto'>
 
                 <div className='mb-2'>
-                    <h2 className='text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1'>Education</h2>
-                    <p className='py-6'>Check out some of my certificates</p>
+                    <h2 className='inline pb-1 text-4xl font-bold border-b-4 border-primary-color/40 sm:text-5xl'>Educación</h2>
+                    <p className='py-6'>Te invito a conocer algunos de mis logros académicos</p>
                 </div>
 
                 <Slider {...settings} className="grid w-[90%] lg:w-full mx-auto">
@@ -69,14 +70,21 @@ const CertificateSlider = ({ certificates }) => {
                 </Slider>
             </div>
 
-            <ScrollLink to="Contact" smooth duration={500} className='absolute bottom-2 -left-full md:left-1/2 md:-translate-x-1/2 cursor-pointer hover:text-primary-color'>
-                <i className='bx bx-chevron-down text-7xl text-gray-400 animate-bounce font hover:text-primary-color'></i>
+            <ScrollLink to="Contact" smooth duration={500} className='absolute cursor-pointer bottom-2 -left-full md:left-1/2 md:-translate-x-1/2 hover:text-primary-color'>
+                <i className='text-gray-400 bx bx-chevron-down text-7xl animate-bounce font hover:text-primary-color'></i>
             </ScrollLink>
 
             <CertificateModal selectedImage={selectedImage} setSelectedImage={setSelectedImage} />
         </section>
         
     );
+};
+CertificateSlider.propTypes = {
+    certificates: PropTypes.arrayOf(
+        PropTypes.shape({
+            image: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 };
 
 export default CertificateSlider;

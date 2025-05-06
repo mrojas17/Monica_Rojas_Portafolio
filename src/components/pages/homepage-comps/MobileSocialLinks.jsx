@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -49,11 +48,11 @@ const MobileSocialLinks = () => {
 
     return (
         <div className="flex mt-4 desktop:hidden">
-            <ul className="flex gap-2 flex-wrap justify-center">
+            <ul className="flex flex-wrap justify-center gap-2">
                 {
                     links.map(({id, child, href, style, download}) => (
-                        <li key={id} className={"flex items-center gap-2 w-28 h-9 px-4 bg-gradient-to-t from-green-400/50 to-primary-color/50 rounded-md" + " " + style }>
-                            <a href={href} className="flex gap-3 items-center w-full text-white text-sm" download={download} target="_blank" rel="noreferrer">
+                        <li key={id} className={"flex items-center gap-2 w-28 h-9 px-4 bg-gradient-to-t from-light-lilac/50 to-primary-color/50 rounded-md" + " " + style }>
+                            <a href={href} className="flex items-center w-full gap-3 text-sm text-white" download={download} target="_blank" rel="noreferrer">
                             {child}
                             </a>
                         </li>
