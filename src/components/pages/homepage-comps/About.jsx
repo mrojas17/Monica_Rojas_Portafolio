@@ -12,7 +12,7 @@ const About = () => {
                     </div>
 
                     <p className='py-2 '>
-                    ¡Hola! Soy FullStack Developer y también Ingeniera Agrónoma de formación. Después de terminar mi formación universitaria, decidí dar un giro profesional y meterme de lleno en la tecnología, algo que siempre me interesó.
+                    Soy FullStack Developer y también Ingeniera Agrónoma de formación. Después de terminar mi formación universitaria, decidí dar un giro profesional y meterme de lleno en la tecnología, algo que siempre me interesó.
                     </p>
                     <p className='py-2 '>
                     Estudié desarrollo web en Soy Henry, donde me formé como desarrolladora FullStack. Desde entonces, no he parado de aprender y de entusiasmarme con todo lo que se puede crear a través del código.
