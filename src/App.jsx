@@ -24,7 +24,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<AllProjectsPage />} />
         <Route path="/technologies" element={<AllTechsPage />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="/not-available" element={<ErrorPage />} />
       </Routes>
 
       {!isErrorPage && <GeneralFooter />}

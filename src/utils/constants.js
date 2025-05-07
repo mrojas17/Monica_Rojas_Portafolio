@@ -25,7 +25,7 @@ const projects = [
       "ArenaSport es una aplicación web que permite gestionar las reservas de canchas deportivas",
     technologies: "React, Vite, Axios, Formik, React Router DOM, Node.js, Express, TypeORM, PostgreSQL, Nodemailer",
     src: "/images/projectsImages/ArenaSport.png",
-    demo: "No disponible",
+    demo: "/not-available",
     code: "https://github.com/mrojas17/ArenaSport-Reservas",
   },
 ];
