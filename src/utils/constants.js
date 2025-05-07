@@ -18,17 +18,16 @@ const projects = [
     demo: 'https://proyect-e-commerce.vercel.app/',
     code: 'https://github.com/mrojas17/proyect_E-commerce',
   },
-  
-  // {
-  //   id: 3,
-  //   title: "Dogs Blog",
-  //   description:
-  //     "DogsBlog is a page for dog lovers where you can find some articles with relevant information about the care of these beautiful animals.",
-  //   technologies: "Javascript, HTML5, CSS3",
-  //   src: "/images/projectsImages/dogsblog.webp",
-  //   demo: "https://dogs-blog-diegotellezdev.netlify.app/",
-  //   code: "https://github.com/diegotellezc/dogsBlog",
-  // },
+  {
+    id: 3,
+    title: "ArenaSport - Reservas",
+    description:
+      "ArenaSport es una aplicación web que permite gestionar las reservas de canchas deportivas",
+    technologies: "React, Vite, Axios, Formik, React Router DOM, Node.js, Express, TypeORM, PostgreSQL, Nodemailer",
+    src: "/images/projectsImages/ArenaSport.png",
+    demo: "No disponible",
+    code: "https://github.com/mrojas17/ArenaSport-Reservas",
+  },
 ];
 
 export default projects;

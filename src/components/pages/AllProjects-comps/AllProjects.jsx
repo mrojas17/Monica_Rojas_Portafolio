@@ -16,12 +16,6 @@ const AllProjects = () => {
             src: EcommerceTech,
             demo: 'https://proyect-e-commerce.vercel.app/',
             code: 'https://github.com/mrojas17/proyect_E-commerce'
-        },
-        {
-            id: 3,
-            // src: dogsblog,
-            demo: 'https://dogs-blog-diegotellezdev.netlify.app/',
-            code: 'https://github.com/diegotellezc/dogsBlog'
         }
     ]
 
